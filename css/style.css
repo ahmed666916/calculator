@@ -16,7 +16,20 @@ body {
    
 }
 
+
+.button-container{
+    display: flex;
+    border: 1px solid black;
+}
+
+
+.number-container {
+    border: 1px solid red;
+}
+
+
 .input-container {
+
     
 }
 
