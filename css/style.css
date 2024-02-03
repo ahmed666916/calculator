@@ -3,6 +3,6 @@
     justify-content: center;
 }
 
-.input-container{
-    
+.input-container textarea{
+    background-color: rgb(185, 235, 245);
 }
