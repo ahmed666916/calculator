@@ -1,5 +1,6 @@
 
 const buttonTexts = ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", ".", "="];
+const operatorTexts = ["+", "-", "×", "÷"];
 
 const btn_container = document.getElementById("button-container");
 
