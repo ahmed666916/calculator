@@ -17,6 +17,10 @@ buttonTexts.forEach((text) => {
     button.classList.add("button");
     button.textContent = text;
     button.onclick = function() {
+        if (button.textContent === "=") {
+            handleButtonClick(" "+ text + " ");
+            return;
+        }
         handleButtonClick(text);
     }
     num_container.appendChild(button);
@@ -57,6 +61,9 @@ function multiply(a, b) {
 function divide(a, b) {
     return a / b;
 }
+
+
+
 
 input_container.appendChild(input);
 
