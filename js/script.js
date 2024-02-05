@@ -29,7 +29,7 @@ operatorTexts.forEach((text) => {
     button.classList.add("operator");
     button.textContent = text;
     button.onclick = function() {
-        handleButtonClick(text);
+        handleButtonClick(" "+ text + " ");
     }
     operator_container.appendChild(button);
 
