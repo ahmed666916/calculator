@@ -30,6 +30,11 @@ body {
 
 .number-container {
     border: 1px solid red;
+    width: 75%;
+}
+
+.operator-container {
+    width: 20%;
 }
 
 
