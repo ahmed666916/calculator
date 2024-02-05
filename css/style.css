@@ -41,6 +41,7 @@ body {
 
 
 .input-container {
+    border: 1px solid yellow;
 
     
 }
@@ -53,6 +54,7 @@ body {
 
 .button {
     width: 33.3%;
+    opacity: .6;
 }
 
 .container #input {
