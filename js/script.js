@@ -8,7 +8,7 @@ const num_container = document.getElementById("number-container");
 const operator_container = document.getElementById("operator-container");
 
 const input_container = document.getElementById("input-container");
-const textArea = document.getElementById("input");
+const input = document.getElementById("input");
 
 
 buttonTexts.forEach((text) => {
@@ -36,8 +36,12 @@ operatorTexts.forEach((text) => {
 })
 
 function handleButtonClick(buttonText) {
-    console.log(`Button clicked: ${buttonText}`);
+    
+    input.value = `${buttonText}`;
+    
 }
+
+input_container.appendChild(input);
 
 btn_container.appendChild(num_container);
 btn_container.appendChild(operator_container);
