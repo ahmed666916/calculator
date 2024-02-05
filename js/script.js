@@ -11,7 +11,7 @@ const input_container = document.getElementById("input-container");
 const textArea = document.getElementById("input");
 
 
-buttonTexts.forEach((text, index) => {
+buttonTexts.forEach((text) => {
     const button = document.createElement("button");
     button.id = `button_${text.replace(/\s+/g, '_')}`;
     button.classList.add("button");
@@ -20,8 +20,9 @@ buttonTexts.forEach((text, index) => {
 })
 
 
-operatorTexts.forEach((text, index) => {
+operatorTexts.forEach((text) => {
     const button = document.createElement("button");
+    button.id = `button_${text.replace(/\s+/g, '_')}`;
     button.classList.add("operator");
     button.textContent = text;
     operator_container.appendChild(button);
