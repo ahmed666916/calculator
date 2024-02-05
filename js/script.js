@@ -16,6 +16,9 @@ buttonTexts.forEach((text) => {
     button.id = `button_${text.replace(/\s+/g, '_')}`;
     button.classList.add("button");
     button.textContent = text;
+    button.onclick = function() {
+        handleButtonClick(text);
+    }
     num_container.appendChild(button);
 })
 
@@ -29,6 +32,9 @@ operatorTexts.forEach((text) => {
 
 })
 
+function handleButtonClick(buttonText) {
+    console.log(`Button clicked: ${buttonText}`);
+}
 
 btn_container.appendChild(num_container);
 btn_container.appendChild(operator_container);
