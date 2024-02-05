@@ -7,6 +7,10 @@ const btn_container = document.getElementById("button-container");
 const num_container = document.getElementById("number-container");
 const operator_container = document.getElementById("operator-container");
 
+const input_container = document.getElementById("input-container");
+const textArea = document.getElementById("input");
+
+
 buttonTexts.forEach((text, index) => {
     const button = document.createElement("button");
     button.id = `button${index + 1}`;
