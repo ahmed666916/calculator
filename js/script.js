@@ -41,6 +41,23 @@ function handleButtonClick(buttonText) {
     
 }
 
+
+function add(a, b) {
+    return a + b;
+}
+
+function subtract(a, b) {
+    return a - b;
+}
+
+function multiply(a, b) {
+    return a * b;
+}
+
+function divide(a, b) {
+    return a / b;
+}
+
 input_container.appendChild(input);
 
 btn_container.appendChild(num_container);
