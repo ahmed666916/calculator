@@ -28,6 +28,9 @@ operatorTexts.forEach((text) => {
     button.id = `button_${text.replace(/\s+/g, '_')}`;
     button.classList.add("operator");
     button.textContent = text;
+    button.onclick = function() {
+        handleButtonClick(text);
+    }
     operator_container.appendChild(button);
 
 })
