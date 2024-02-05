@@ -16,5 +16,14 @@ buttonTexts.forEach((text, index) => {
 })
 
 
+operatorTexts.forEach((text, index) => {
+    const button = document.createElement("button");
+    button.classList.add("operator");
+    button.textContent = text;
+    operator_container.appendChild(button);
+
+})
+
+
 btn_container.appendChild(num_container);
 btn_container.appendChild(operator_container);
