@@ -37,7 +37,7 @@ operatorTexts.forEach((text) => {
 
 function handleButtonClick(buttonText) {
     
-    input.value = `${buttonText}`;
+    input.value += `${buttonText}`;
     
 }
 
