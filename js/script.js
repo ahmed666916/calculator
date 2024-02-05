@@ -13,7 +13,7 @@ const textArea = document.getElementById("input");
 
 buttonTexts.forEach((text, index) => {
     const button = document.createElement("button");
-    button.id = `button${index + 1}`;
+    button.id = `button_${text.replace(/\s+/g, '_')}`;
     button.classList.add("button");
     button.textContent = text;
     num_container.appendChild(button);
