@@ -98,11 +98,15 @@ function operate(a, b) {
         return displayResult(sum) ;
         
     }else if(operator === "-") {
-        return subtract(num1, num2);
+        let difference = subtract(num1, num2);
+
+        return displayResult(difference);
     }else if(operator === "×") {
-        return multiply(num1, num2);
+        let product = multiply(num1, num2);
+        return displayResult(product);
     }else if(operator === "÷") {
-        return divide(num1, num2);
+        let division = divide(num1, num2);
+        return displayResult(division);
     }else {
         alert("Error!");
     }
