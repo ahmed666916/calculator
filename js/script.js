@@ -19,6 +19,8 @@ buttonTexts.forEach((text) => {
     button.onclick = function() {
         if (button.textContent === "=") {
             handleButtonClick(" "+ text + " ");
+            //operate();
+            getInputText();
             return;
         }
         handleButtonClick(text);
@@ -46,6 +48,15 @@ function handleButtonClick(buttonText) {
 }
 
 
+function getInputText() {
+    let inputValue = input.value;
+    console.log(inputValue);
+    console.log(typeof(inputValue));
+
+
+}
+
+
 function add(a, b) {
     return a + b;
 }
@@ -60,6 +71,10 @@ function multiply(a, b) {
 
 function divide(a, b) {
     return a / b;
+}
+
+function operate(a, b) {
+
 }
 
 
