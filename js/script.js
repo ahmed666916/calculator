@@ -57,9 +57,16 @@ function getInputText() {
     let num2 = parseFloat(numArray[2]);
     let operator = numArray[1];
 
-    console.log(num1);
-    console.log(num2);
-    console.log(operator);
+    //console.log(num1);
+    //console.log(num2);
+    //console.log(operator);
+    let inputArray = [];
+    inputArray.push(num1);
+    inputArray.push(num2);
+    inputArray.push(operator);
+    
+
+    return inputArray;
 
 
 
@@ -83,6 +90,22 @@ function divide(a, b) {
 }
 
 function operate(a, b) {
+    let inputArray = getInputText();
+    let num1 = inputArray[0];
+    let num2 = inputArray[1];
+    let operator = inputArray[2];
+    if (operator === "+") {
+        return add(num1, num2);
+        
+    }else if(operator === "-") {
+        return subtract(num1, num2);
+    }else if(operator === "×") {
+        return multiply(num1, num2);
+    }else if(operator === "÷") {
+        return divide(num1, num2);
+    }else {
+        alert("Error!");
+    }
 
 }
 
