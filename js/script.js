@@ -19,8 +19,7 @@ buttonTexts.forEach((text) => {
     button.onclick = function() {
         if (button.textContent === "=") {
             //handleButtonClick(" "+ text + " ");
-            //operate();
-            getInputText();
+            operate();
             return;
         }
         handleButtonClick(text);
@@ -95,7 +94,8 @@ function operate(a, b) {
     let num2 = inputArray[1];
     let operator = inputArray[2];
     if (operator === "+") {
-        return add(num1, num2);
+        let sum = add(num1, num2);
+        return displayResult(sum) ;
         
     }else if(operator === "-") {
         return subtract(num1, num2);
@@ -107,6 +107,10 @@ function operate(a, b) {
         alert("Error!");
     }
 
+}
+
+function displayResult(result) {
+    input.value = result;
 }
 
 
