@@ -18,7 +18,6 @@ buttonTexts.forEach((text) => {
     button.textContent = text;
     button.onclick = function() {
         if (button.textContent === "=") {
-            //handleButtonClick(" "+ text + " ");
             operate();
             return;
         }
@@ -49,16 +48,10 @@ function handleButtonClick(buttonText) {
 
 function getInputText() {
     let inputValue = input.value;
-    //console.log(inputValue);
-    //console.log(typeof(inputValue));
     let numArray = inputValue.split(" ");
     let num1 = parseFloat(numArray[0]);
     let num2 = parseFloat(numArray[2]);
     let operator = numArray[1];
-
-    //console.log(num1);
-    //console.log(num2);
-    //console.log(operator);
     let inputArray = [];
     inputArray.push(num1);
     inputArray.push(num2);
@@ -116,6 +109,13 @@ function operate(a, b) {
 function displayResult(result) {
     input.value = result;
 }
+
+
+function resetDisplay() {
+    input.value = "";
+}
+
+
 
 
 
