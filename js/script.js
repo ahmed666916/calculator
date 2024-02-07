@@ -112,7 +112,7 @@ function displayResult(result) {
 
 
 function resetDisplay() {
-    input.value =
+    input.value = "";
 }
 
 
