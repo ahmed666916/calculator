@@ -112,7 +112,23 @@ function displayResult(result) {
 
 
 function resetDisplay() {
-    input.value = "";
+    input.value =
+}
+
+
+function del() {
+    let value = input.value;
+    
+    
+    if (value.length > 0) {
+
+        let newValue = value.substring(0, value.length - 1);
+
+        input.value = newValue;
+
+
+    }
+
 }
 
 
