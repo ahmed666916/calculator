@@ -11,6 +11,7 @@ const input = document.getElementById("input");
 
 
 buttonTexts.forEach((text) => {
+   
     const button = document.createElement("button");
     button.id = `button_${text.replace(/\s+/g, '_')}`;
     button.classList.add("button");
