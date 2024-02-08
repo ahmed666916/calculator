@@ -31,9 +31,7 @@ body {
     height: 30px;
     background-color: lightblue;
     margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
     
   
 }
