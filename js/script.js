@@ -7,7 +7,7 @@ const btn_container = document.getElementById("button-container");
 const num_container = document.getElementById("number-container");
 const operator_container = document.getElementById("operator-container");
 
-const input_container = document.getElementById("input-container");
+const display_container = document.getElementById("display-container");
 const input = document.getElementById("input");
 
 
@@ -138,7 +138,7 @@ function del() {
 
 
 
-input_container.appendChild(input);
+display_container.appendChild(input);
 
 btn_container.appendChild(num_container);
 btn_container.appendChild(operator_container);
