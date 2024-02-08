@@ -1,6 +1,7 @@
 
 const buttonTexts = ["7", "8", "9", "DEL", "4", "5", "6", "+",  "1", "2", "3", "-", ".", "0", "/", "×"];
 
+const container = document.getElementById("container");
 
 const btn_container = document.getElementById("button-container");
 
@@ -138,5 +139,8 @@ function del() {
 
 display_container.appendChild(input);
 
-btn_container.appendChild(num_container);
-btn_container.appendChild(operator_container);
+
+container.appendChild(display_container);
+container.appendChild(btn_container);
+
+document.body.appendChild(container);

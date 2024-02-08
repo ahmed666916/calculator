@@ -22,26 +22,14 @@ body {
     
 }
 
-.operator-container {
-    display: flex;
-    flex-direction: column;
-    
-}
 
 
-.number-container {
-    width: 75%;
-}
-
-.operator-container {
-    width: 20%;
-}
 
 
 
 
 .button {
-    width: 33.3%;
+    width: 25%;
     opacity: .6;
   
 }
