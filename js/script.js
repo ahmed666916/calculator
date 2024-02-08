@@ -4,8 +4,6 @@ const buttonTexts = ["7", "8", "9", "DEL", "4", "5", "6", "+",  "1", "2", "3", "
 
 const btn_container = document.getElementById("button-container");
 
-const num_container = document.getElementById("number-container");
-const operator_container = document.getElementById("operator-container");
 
 const display_container = document.getElementById("display-container");
 const input = document.getElementById("input");
@@ -23,7 +21,7 @@ buttonTexts.forEach((text) => {
         }
         handleButtonClick(text);
     }
-    num_container.appendChild(button);
+    btn_container.appendChild(button);
 })
 
 
